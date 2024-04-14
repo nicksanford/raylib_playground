@@ -17,7 +17,7 @@ endif
 
 build: raylib/src/libraylib.a src/*.c
 	mkdir -p $(BIN_OUTPUT_PATH)
-	$(CC) $(CWFLAGS) $(COPTIONS) -I./raylib/src $(LDFLAGS) ./raylib/src/libraylib.a src/main.c -o $(BIN_OUTPUT_PATH)/main 
+	$(CC) -std=c17 -O1 $(CWFLAGS) $(COPTIONS) -I./raylib/src $(LDFLAGS) ./raylib/src/libraylib.a src/main.c -o $(BIN_OUTPUT_PATH)/main 
 
 raylib/src/libraylib.a: raylib
 	cd raylib/src && MACOSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} make
