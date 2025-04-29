@@ -10,7 +10,8 @@ int main(void) {
 
   bool showMessageBox = false;
 
-  GuiLoadStyle("./raygui/styles/cherry/style_cherry.txt.rgs");
+  // GuiLoadStyle("./raygui/styles/cherry/style_cherry.txt.rgs");
+  GuiLoadStyle("./raygui/styles/dark/style_dark.txt.rgs");
   while (!WindowShouldClose()) {
     // Draw
     //----------------------------------------------------------------------------------
