@@ -26,3 +26,4 @@
 -L./raylib/src
 -lraylib
 -I./raylib/src
+-I./raygui/src
