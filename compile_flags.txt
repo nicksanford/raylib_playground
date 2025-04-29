@@ -23,7 +23,7 @@
 -fno-common
 -ggdb
 -fsanitize=address
--L./raylib/src
--lraylib
 -I./raylib/src
 -I./raygui/src
+-L./raylib/src
+-lraylib

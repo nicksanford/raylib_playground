@@ -4,11 +4,13 @@
 #include "raygui.h"
 
 int main(void) {
+  // GuiLoadStyleCherry();
   InitWindow(400, 200, "raygui - controls test suite");
   SetTargetFPS(60);
 
   bool showMessageBox = false;
 
+  GuiLoadStyle("./raygui/styles/cherry/style_cherry.txt.rgs");
   while (!WindowShouldClose()) {
     // Draw
     //----------------------------------------------------------------------------------
